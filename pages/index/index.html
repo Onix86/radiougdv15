@@ -10,7 +10,20 @@
     RADIO UGD
   </h1>
   <div id="index-container1">
-
+<div id="siri-container"></div>
+<script src="siriwave.js"></script>
+<script>
+var siriWave = new SiriWave({
+	container: document.getElementById('siri-container'),
+	width: 640,
+	height: 200,
+	/*
+	speed: 0.2,
+	color: '#000',
+	frequency: 2
+	*/
+});
+</script>
     	<audio controls autoplay>
                 <source src="http://70.38.73.27:8005/stream" type="audio/mpeg"></source>
             </audio>

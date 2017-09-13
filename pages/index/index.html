@@ -6,31 +6,26 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page1">
-  <h1 id="index-heading1" style="color:#000000;text-align:center;">
-    RADIO UGD
-  </h1>
+<ion-img width="80" height="80" src="..."></ion-img>
   <div id="index-container1">
-<div id="siri-container"></div>
-<script src="siriwave.js"></script>
-<script>
-var siriWave = new SiriWave({
-	container: document.getElementById('siri-container'),
-	width: 640,
-	height: 200,
-	/*
-	speed: 0.2,
-	color: '#000',
-	frequency: 2
-	*/
-});
-</script>
+
+
+
     	<audio controls autoplay>
                 <source src="http://70.38.73.27:8005/stream" type="audio/mpeg"></source>
             </audio>
 
   
   </div>
- 
+ <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
 
 <ion-footer>
